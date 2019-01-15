@@ -1,0 +1,82 @@
+git init <nombreCarpeta> // crea la carpeta y el repositorio de git
+
+git config.username <username> // agrega solo al proyecto
+git config.email <email> // agrega solo al proyecto
+git --global config.<configuracion> // agrega a toda la configuracion de git
+
+gi tiene tres estados para los archivos 
+
+1º git workin directory que es el archivo nuevo sin ser agregado
+2º git steinging el archivo ya a sido agregado atraves de git add 
+3º ya a sido agregado con el commit 
+
+git add . or -A // agrega todo lo que se debe agregar
+git add <file> // solo agrega un archivo
+
+git rm --cached <file> // borra los archivos en stelling 
+git rm -f <file> // elimina por completo el archivo de working o steling
+
+git commit -m "<Mensaje>" // confirma los archivos agregados y se agregan
+git commit -m "<nuevo mensaje>" --amend // agrega los archivos al commit anterior si se agrega mensaje se sobreescribe al del commit
+
+git tag -a <version> hash -m "<mensaje>" // agrega una etiqueta al commit sobre cualquier cosa 
+git tag -a <version hash // tag ligero sin mensaje 
+git tag -l // ver los tag
+git tag -f -a <version> -m "<Mensaje>" // sobreescribe el tag
+git tag -d <verison> // borra el tag
+
+git log // te muestra lista de logs 
+git log --oneline --grapg // muestra la ista de commit resumida y congrafico de cambios
+
+git diff hash // muestra las diferencias del commit con el archivo actual 
+git diff hash hash // muyestra las diferencias de dos commit 
+
+git reset --soft hash //te regresa hasta el commit que agregues [1,2,3] eliges 2 queda [1,2] no quita las modificaciones las tantiene en stache
+git reset --mixed hash // te regresa hasta el commit que agregues[1,2,3] eliges 1 queda [1] no elimina modificaciones y los deja en working directori
+git reset HEAD <file> // quita archivo de steling 
+git reset --hard hash // borra absolutamente todo hasta el commit que agregaste en el stage 
+
+git branch <name> // crea una rama
+git branch -l // lista las ramas
+git branch -d <name> // borra una rama
+git branch -D <name> // forza el borrado de una rama
+git branch -m <name> <newName> // remonbra una rama
+
+git checkout <nam> // mueve a la rama
+git checkout -b <name> // mueve la rama y la crea
+git checkout <hash> // te mueve al commit no borra nada
+
+los archivos no agregados se mueven junto con las ramas 
+
+git merge ramaQuejalaCambios ramaConLosCambios // mezcla los cambios entre dos ramos hacia una rama
+
+git tiene cambios 
+Fast-forward // cambio rapido no hay errores es continuación directa
+Auto-mergin // mezcla recursiva automaticamente junta los cambios sin problemas
+Auto-mergin Conficto // manda la información de que hay un conflicto HEAD es la que hay en la cabezera 
+
+git rebase <breanch> // cambia la historia del proyecto para unificar ramas es peligroso 
+
+git stash // agrega tus cambios en hold para moverte entre ramas solo que esten en stashing
+git stash list // lista los stash
+git stash drop <stash>
+git stash apply <stach> //recupera el estado
+
+git checkout -- <file> // elimina cambios de un archivo
+
+git cherry-pick <commit> //saca el commit de una rama y lo coloca en otra rama para colocar el master por un merge
+
+git remote add origin <URL> //agregar repositorio
+git pull origi master 
+...
+git push
+
+
+
+
+
+
+
+
+
+
