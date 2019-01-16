@@ -77,6 +77,22 @@ git push origin <branch> // envia las ramas
 agregar un ssh a tu repo para att
 pbcopy < ~/.ssh/id_rsa.pub // copia la llave
 
+hay varios proyectos dentro del repositorío se agrega proyecto por cada movimiento grande
+te proporciona un tablero de scrum
+
+
+issue_templete.md proporciona el formularío para subir issues
+
+pull_request.md proporciona el formulario de un pull request 
+
+en settings se puede proteger la rama master
+
+gitignore.io
+
+github page solo codigo status
+
+gitthub pudes poner dominio a tu pagina 
+
 
 
 
