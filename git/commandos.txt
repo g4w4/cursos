@@ -67,11 +67,15 @@ git checkout -- <file> // elimina cambios de un archivo
 git cherry-pick <commit> //saca el commit de una rama y lo coloca en otra rama para colocar el master por un merge
 
 git remote add origin <URL> //agregar repositorio
+git remote remove <URL> // elimina el repositorio
 git pull origi master 
 ...
 git push
+git push origin master --targs // envia los tags
+git push origin <branch> // envia las ramas
 
-
+agregar un ssh a tu repo para att
+pbcopy < ~/.ssh/id_rsa.pub // copia la llave
 
 
 
