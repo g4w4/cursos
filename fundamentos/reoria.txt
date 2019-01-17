@@ -1,0 +1,5 @@
+
+una funcion que viene de un objeto es un metodo
+una variable del objeto se llama atributo
+
+canvas solo se puede dibujar con js 

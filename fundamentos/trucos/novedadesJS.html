@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trucos JS</title>
+    <style>
+        .btn {
+            background-color: cornflowerblue;
+            border-radius: 5px;
+            padding: 5px;
+        }
+        .div{
+            width: 100%;
+            padding: 10px;
+            border : 5px;
+            border-color: cornflowerblue;   
+        }
+    </style>
+</head>
+<body>
+    <div class="div">
+        <button onclick="pesoMarte()" class="btn">Peso en marte</button>
+    </div>
+    <script>
+            let pesoMarte = () => {
+        
+                let pregunta = () => {
+                    let respuesta = prompt('¿Cuanto pesas?');
+                    if( isNaN(respuesta) || respuesta.trim() == '') { alert('Recuerda solo usar numeros'); return pregunta() }
+                    return parseFloat(respuesta).toFixed(2);
+                }
+        
+                let respuesta = pregunta();
+                const gMarte = 3.8;
+                const gTierra = 9.8;
+                let peso = parseFloat(respuesta * gMarte) / gTierra;
+                alert(`Tu peso en marte es ${peso.toFixed(2)} kg`)
+            }
+        </script>
+</body>
+</html>
+
+
+
