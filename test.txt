@@ -1,0 +1,26 @@
+tortule esta genial
+
+10// 4 Resultado entero
+10 % 4 da el modulo de la divicion osea lo restante del entero
+type(value) obtiene el valor 
+_ privada
+__ no tocar 
+PI constante 
+
+
+/* Entorno virtual */
+pip install virtualenv
+/* entorno virtual con python3*/
+virtualenv env --python=python3
+/* activar entorno */ 
+cd env
+$ source bin/activate
+/* slair de entorno virtual */
+deactivate
+[::-1] // voltea la palabra
+
+slice [:::]
+
+en for o foreach el coninue es que no haga el codigo 
+
+listas se copian con el modulo copi 

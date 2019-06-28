@@ -1,0 +1,13 @@
+tortule esta genial
+
+string not in string|array --> operadores de pertencia
+
+string in string|array
+for indice,valor in enumerate(array):
+
+Array.index(string) obtiene el indice
+
+
+For key,value in dic.items
+
+'{}'.format(value)

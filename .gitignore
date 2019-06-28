@@ -1,0 +1,36 @@
+
+# Created by https://www.gitignore.io/api/angular
+# Edit at https://www.gitignore.io/?templates=angular
+
+### Angular ###
+## Angular ##
+# compiled output
+angular6/dist
+angular6/tmp
+angular6/app/**/*.js
+angular6/app/**/*.js.map
+
+# dependencies
+angular6/node_modules
+angular6/bower_components
+
+# IDEs and editors
+angular6/.idea
+
+# misc
+angular6/.sass-cache
+angular6/connect.lock
+angular6/coverage/*
+angular6/libpeerconnection.log
+angular6npm-debug.log
+angular6/testem.log
+angular6/typings
+
+# e2e
+angular6/e2e/*.js
+angular6/e2e/*.map
+
+#System Files
+angular6/.DS_Store
+
+# End of https://www.gitignore.io/api/angular
